@@ -42,7 +42,7 @@ Okta offers free developer accounts that let you use it as an IdP in this sample
 
 ![Screenshot of an Okta created key pair](/docs/assets/images/okta-applications-7.png)
 
-* Or, you can generate keys with the provided [script in this repository](../README.md#user-content-create-a-private-public-key-pair-in-jwk-format) (2. Option) and just upload the public key.
+* Or, you can generate keys with the provided [script in this repository](../README.md#create-a-private--public-key-pair-in-jwk-format) (2. Option) and just upload the public key.
 
 ![Screenshot of providing your own public key](/docs/assets/images/okta-applications-8.png)
 
