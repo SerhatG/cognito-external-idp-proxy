@@ -12,26 +12,26 @@ Okta offers free developer accounts that let you use it as an IdP in this sample
 ## Create an OIDC application
 * After loging in to your Okta admin portal, navigate to Applications > Applications in the menu and select "Create App integration".
 
-![Screenshot of the Application section in the Okta admin portal](docs/assets/images/okta-applications-1.png)
+![Screenshot of the Application section in the Okta admin portal](/docs/assets/images/okta-applications-1.png)
 
 * In the opening dialogue, select "OIDC - OpenID Connect" as the Sign-in method an "Web Application" as the application type.
 
-![Screenshot of the Okta app integration dialogue](docs/assets/images/okta-applications-2.png)
+![Screenshot of the Okta app integration dialogue](/docs/assets/images/okta-applications-2.png)
 
 * After hitting next, you can give your integration a name and need to provide the API Gateway /callback route URI under the Sign-in redirect URIs. You can get the value from the output of the stack deployment. Alternatively, leave the placeholder value and come back later.
 
-![Screenshot of the Okta app integration configuration dialogue](docs/assets/images/okta-applications-3.png)
+![Screenshot of the Okta app integration configuration dialogue](/docs/assets/images/okta-applications-3.png)
 
 * Under Assignments, select "Allow everyone in your organization to access" and leave the "Federation Broker" Mode enabled. If you are using your existing Okta account, consider to select "Limit acces to selected groups" and make sure to assign the correct groups of your directory.
 
-![Screenshot of the Okta app integration configuration assignment section](docs/assets/images/okta-applications-4.png)
+![Screenshot of the Okta app integration configuration assignment section](/docs/assets/images/okta-applications-4.png)
 
 * Hit save to finish the initialization. You are redirected to the application integration overview. Select your newly created application and proceed with the next steps.
 
 ## Activate Private Key JWT and PKCE functionality
 * In the general settings of your application integration settings, click the edit button of the "Client Credentials" settings. Then select "Public key / Private key" as Client authentication and "Require PKCE as additional verification". Leave the rest as is. Hit "Save" to confirm the configuration.
 
-![Screenshot of the Okta app integration configuration with Private Key JWT and PKCE](docs/assets/images/okta-applications-5.png)
+![Screenshot of the Okta app integration configuration with Private Key JWT and PKCE](/docs/assets/images/okta-applications-5.png)
 
 ## Integrate a key pair
 * After activating Private Key JWT and PKCE for your application integration, you can add public keys to it.
